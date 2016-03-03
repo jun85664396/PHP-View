@@ -48,7 +48,7 @@ class PhpRenderer
    * @throws \InvalidArgumentException
    * @throws \RuntimeException
    */
-  public function render(ResponseInterface $response, $template, array $data = [], $layout = "/layout.php")
+  public function render(ResponseInterface $response, $template, array $data = [], $layout = "/layout.html")
   {
     if (isset($data['template'])) {
       throw new \InvalidArgumentException("Duplicate template key found");
